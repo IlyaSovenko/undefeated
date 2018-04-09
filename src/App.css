@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 
-  & .section {
+  & .firstSection {
     background: #fff url(./assets/bg.jpg) center center no-repeat;
     color: white;
     height: 100vh;
@@ -10,8 +10,12 @@
     justify-content: center;
 
     & img {
-      width: 250px;
+      width: 15%;
       border: 15px solid white;
     }
   }
 }
+
+/*#0096b2 - blue*/
+/*#f2ac3e - orange*/
+/*#e96154 - red*/

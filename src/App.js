@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className={styles.App}>
-        <div className={styles.section}>
+        <div className={styles.firstSection}>
           <img src={logo} alt="logo"/>
         </div>
       </div>
