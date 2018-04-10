@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.App {
+  text-align: center;
+
+  & .firstSection {
+    background: #fff url(./assets/bg.jpg) center center no-repeat;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & .topSlogan {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      top: 5px;
+      font-size: 25px;
+
+      hr {
+        flex: 1;
+        height: 100%;
+        border: 5px solid #f2ac3e;
+      }
+
+      .slogan {
+        font-weight: bold;
+        margin: 0 10px;
+        font-family: 'Amatic SC', cursive;
+      }
+    }
+
+    .socials {
+      margin-bottom: 30px;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 250px;
+    }
+
+    & img {
+      width: 250px;
+      border: 15px solid #f2ac3e;
+    }
+  }
+
+  .secondSection {
+    height: 350px;
+    background-color: white;
+  }
+}
+
+/* #0096b2 - blue */
+
+/* #f2ac3e - orange */
+
+/* #e96154 - red */
