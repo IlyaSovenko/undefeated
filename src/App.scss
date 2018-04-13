@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .App {
   text-align: center;
@@ -50,8 +52,29 @@
   }
 
   .secondSection {
-    height: 350px;
-    background-color: white;
+    margin-top: -21.5px;
+    background-color: #0c0c0c;
+    padding-top: 20px;
+    height: 450px;
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #fff;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+
+      h1 {
+        padding-top: 7px;
+        padding-right: 5px;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-family: 'Black Han Sans', sans-serif;
+        color: #f2ac3e;
+      }
+    }
   }
 }
 

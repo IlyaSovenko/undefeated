@@ -17,7 +17,7 @@ class App extends Component {
           <img src={logo} alt="logo"/>
         </div>
         <div className={styles.secondSection}>
-          <h1>Second Section</h1>
+          <span className={styles.title}><h1>Undefeated</h1> - это</span>
         </div>
       </div>
     );
