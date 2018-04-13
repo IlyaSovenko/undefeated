@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 
 .App {
   text-align: center;
 
   & .firstSection {
-    background: #fff url(./assets/bg.jpg) center center no-repeat;
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
     color: white;
     position: relative;
     height: 100vh;
@@ -53,20 +55,26 @@
 
   .secondSection {
     margin-top: -21.5px;
-    background-color: #0c0c0c;
-    padding-top: 20px;
-    height: 450px;
+    background-color: #f6f6f6;
+    padding: 20px;
+
+    h1 {
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 30px;
+      margin-bottom: 0;
+      margin-top: 35px;
+    }
 
     .title {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      color: #fff;
+      color: #212121;
       align-items: center;
       font-family: 'Montserrat', sans-serif;
       font-size: 25px;
 
-      h1 {
+      h2 {
         padding-top: 7px;
         padding-right: 5px;
         font-size: 32px;
@@ -75,6 +83,29 @@
         color: #f2ac3e;
       }
     }
+
+    .info {
+      margin: auto;
+      max-width: 1105px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .card {
+        width: 300px;
+        margin: 30px;
+        height: 350px;
+        background-color: white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      }
+    }
+  }
+
+  .thirdSection {
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    height: 20vh;
   }
 }
 

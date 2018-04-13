@@ -17,7 +17,29 @@ class App extends Component {
           <img src={logo} alt="logo"/>
         </div>
         <div className={styles.secondSection}>
-          <span className={styles.title}><h1>Undefeated</h1> - это</span>
+          <h1>Что?</h1>
+          <span className={styles.title}><h2>Undefeated</h2> - это</span>
+          <div className={styles.info}>
+            <div className={styles.card}>
+            </div>
+            <div className={styles.card}>
+            </div>
+            <div className={styles.card}>
+            </div>
+          </div>
+          <h1>Где?</h1>
+          <span className={styles.title}><h2>s.Velika Chernetchena</h2></span>
+          <div className={styles.info}>
+            <div className={styles.card}>
+            </div>
+            <div className={styles.card}>
+            </div>
+            <div className={styles.card}>
+            </div>
+          </div>
+        </div>
+        <div className={styles.thirdSection}>
+          Осталось 22дня
         </div>
       </div>
     );
