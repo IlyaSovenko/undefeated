@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 
+$blue: #0096b2;
+$orange: #f2ac3e;
+$red: #e96154;
+
 .App {
   text-align: center;
 
@@ -28,7 +32,7 @@
       hr {
         flex: 1;
         height: 100%;
-        border: 5px solid #f2ac3e;
+        border: 5px solid $orange;
       }
 
       .slogan {
@@ -49,7 +53,7 @@
 
     & img {
       width: 250px;
-      border: 15px solid #f2ac3e;
+      border: 15px solid $orange;
     }
   }
 
@@ -80,7 +84,7 @@
         font-size: 32px;
         text-transform: uppercase;
         font-family: 'Black Han Sans', sans-serif;
-        color: #f2ac3e;
+        color: $orange;
       }
     }
 
@@ -100,6 +104,31 @@
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
       }
     }
+
+    button {
+      background-color: $blue;
+      border: 0;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 20px;
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      border-radius: 15px;
+    }
+
+    //.invite {
+    //  font-family: 'Rubik Mono One', sans-serif;
+    //
+    //  h3 {
+    //    font-size: 20px;
+    //    color: $blue;
+    //  }
+    //
+    //  span {
+    //    font-size: 15px;
+    //    color: #212121;
+    //  }
+    //}
   }
 
   .thirdSection {
@@ -108,9 +137,3 @@
     height: 20vh;
   }
 }
-
-/* #0096b2 - blue */
-
-/* #f2ac3e - orange */
-
-/* #e96154 - red */

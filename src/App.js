@@ -17,7 +17,6 @@ class App extends Component {
           <img src={logo} alt="logo"/>
         </div>
         <div className={styles.secondSection}>
-          <h1>Что?</h1>
           <span className={styles.title}><h2>Undefeated</h2> - это</span>
           <div className={styles.info}>
             <div className={styles.card}>
@@ -27,7 +26,11 @@ class App extends Component {
             <div className={styles.card}>
             </div>
           </div>
-          <h1>Где?</h1>
+          {/*<div className={styles.invite}>*/}
+            {/*<h3>Хочешь поехать?</h3>*/}
+            {/*<span>Поторопись, места ограничены!</span>*/}
+          {/*</div>*/}
+          <button>Зарегестрироваться</button>
           <span className={styles.title}><h2>s.Velika Chernetchena</h2></span>
           <div className={styles.info}>
             <div className={styles.card}>
