@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/logo-white.svg';
 import * as styles from './App.scss';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class App extends Component {
   render() {
@@ -26,27 +27,36 @@ class App extends Component {
             <div className={styles.card}>
             </div>
           </div>
-          {/*<div className={styles.invite}>*/}
-            {/*<h3>Хочешь поехать?</h3>*/}
-            {/*<span>Поторопись, места ограничены!</span>*/}
-          {/*</div>*/}
-          <button>Зарегестрироваться</button>
-          <span className={styles.title}><h2>s.Velika Chernetchena</h2></span>
-          <div className={styles.info}>
-            <div className={styles.card}>
-            </div>
-            <div className={styles.card}>
-            </div>
-            <div className={styles.card}>
-            </div>
+          <div className={styles.invite}>
+            <h3>Хочешь поехать?</h3>
+            <span>Поторопись, места ограничены!</span><br/>
+            <button>Зарегестрироваться</button>
+          </div>
+          {/*<span className={styles.title}><h2>/!*Где и когда мы встретимся?*!/4 незабываемых дня!</h2></span>*/}
+          <div className={styles.whenAndWhere}>
+            <h3>26 - 29 июля</h3>
+            <span><h4>4</h4> <span>незабываемых</span> дня фестиваля!</span>
+            <Map
+              google={this.props.google}
+              zoom={13}
+              style={{width: '100%', height: 500}}
+              initialCenter={{lat: 50.965209, lng: 34.899343}}
+            >
+              <Marker title={'Здесь место фестиваля'} name={'UNDEFEATED'} />
+            </Map>
           </div>
         </div>
         <div className={styles.thirdSection}>
-          Осталось 22дня
+          <h1>Осталось <span className={styles.days}>22</span> дня</h1>
         </div>
       </div>
     );
   }
 }
 
-export default App;
+const GOOGLE_API_KEY = 'AIzaSyD_EnZtafth9UxudME65AtdTt1GbxLCaaE';
+
+
+export default GoogleApiWrapper({
+  apiKey: (GOOGLE_API_KEY)
+})(App);

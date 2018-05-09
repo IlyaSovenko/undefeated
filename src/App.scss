@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 
 $blue: #0096b2;
 $orange: #f2ac3e;
@@ -60,7 +63,7 @@ $red: #e96154;
   .secondSection {
     margin-top: -21.5px;
     background-color: #f6f6f6;
-    padding: 20px;
+    padding: 20px 0 10px;
 
     h1 {
       font-family: 'Rubik Mono One', sans-serif;
@@ -81,9 +84,10 @@ $red: #e96154;
       h2 {
         padding-top: 7px;
         padding-right: 5px;
-        font-size: 32px;
+        font-size: 40px;
         text-transform: uppercase;
-        font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        letter-spacing: 2px;
         color: $orange;
       }
     }
@@ -105,35 +109,102 @@ $red: #e96154;
       }
     }
 
-    button {
-      background-color: $blue;
-      border: 0;
-      cursor: pointer;
-      padding: 15px;
-      font-size: 20px;
+    .invite {
+      margin: 20px 0;
+      padding-top: 20px;
+      background-color: #141414;
       font-family: 'Rubik Mono One', sans-serif;
-      color: white;
-      border-radius: 15px;
+
+      h3 {
+        font-size: 20px;
+        color: $blue;
+      }
+
+      button {
+        margin: 50px;
+        background: linear-gradient(to bottom right, $blue, $orange, $red);
+        border: 0;
+        cursor: pointer;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        opacity: 1;
+        transition: all 1s ease;
+        border-radius: 8px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      span {
+        font-size: 15px;
+        color: white;
+      }
     }
 
-    //.invite {
-    //  font-family: 'Rubik Mono One', sans-serif;
-    //
-    //  h3 {
-    //    font-size: 20px;
-    //    color: $blue;
-    //  }
-    //
-    //  span {
-    //    font-size: 15px;
-    //    color: #212121;
-    //  }
-    //}
+    .whenAndWhere {
+      padding-bottom: 490px;
+
+      h3 {
+        font-weight: 500;
+        font-size: 35px;
+        padding: 5px;
+        width: 300px;
+        border: 5px solid $orange;
+        margin: 70px auto 30px;
+      }
+
+      & > div {
+        height: 500px !important;
+      }
+
+      & > span {
+        font-size: 22px;
+        padding-bottom: 40px;
+        display: inline-block;
+        font-family: 'Roboto Slab', serif;
+
+        h4 {
+          font-family: 'Shadows Into Light', cursive;
+          color: #212121;
+          margin: 0;
+          font-size: 50px;
+        }
+
+        & > span {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $red;
+        }
+      }
+    }
   }
 
   .thirdSection {
     background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
     background-size: cover;
-    height: 20vh;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: #f6f6f6;
+      margin: 0;
+      font-size: 45px;
+
+      .days {
+        border: 11px solid #f2ac3e;
+        font-family: 'Alfa Slab One', cursive;
+        border-radius: 50%;
+        font-size: 70px;
+        letter-spacing: 5px;
+        padding: 26px;
+      }
+    }
   }
 }
