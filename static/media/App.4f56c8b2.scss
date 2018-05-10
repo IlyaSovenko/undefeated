@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+$blue: #0096b2;
+$orange: #f2ac3e;
+$red: #e96154;
+
+.App {
+  text-align: center;
+
+  button {
+    background: linear-gradient(to bottom right, $blue, $orange, $red);
+    border: 0;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1;
+    transition: all 1s ease;
+    border-radius: 8px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  & .firstSection {
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & .topSlogan {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      top: 5px;
+      font-size: 25px;
+
+      hr {
+        flex: 1;
+        height: 100%;
+        border: 5px solid $orange;
+      }
+
+      .slogan {
+        font-weight: bold;
+        margin: 0 10px;
+        font-family: 'Amatic SC', cursive;
+      }
+    }
+
+    .socials {
+      margin-bottom: 30px;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 250px;
+    }
+
+    & img {
+      width: 250px;
+      border: 15px solid $orange;
+    }
+  }
+
+  .secondSection {
+    margin-top: -21.5px;
+    background-color: #f6f6f6;
+    padding: 20px 0 10px;
+
+    h1 {
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 30px;
+      margin-bottom: 0;
+      margin-top: 35px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #212121;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+
+      h2 {
+        padding-top: 7px;
+        padding-right: 5px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        letter-spacing: 2px;
+        color: $orange;
+      }
+    }
+
+    .info {
+      margin: auto;
+      max-width: 1105px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .card {
+        width: 300px;
+        margin: 30px;
+        height: 350px;
+        background-color: white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      }
+    }
+
+    .invite {
+      margin: 20px 0;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      background-color: #141414;
+      font-family: 'Rubik Mono One', sans-serif;
+
+      h3 {
+        font-size: 20px;
+        color: $blue;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 50px;
+        font-size: 15px;
+        color: white;
+      }
+    }
+
+    .whenAndWhere {
+      padding-bottom: 490px;
+
+      h3 {
+        font-weight: 500;
+        font-size: 35px;
+        padding: 5px;
+        width: 300px;
+        border: 5px solid $orange;
+        margin: 70px auto 30px;
+      }
+
+      & > div {
+        height: 500px !important;
+      }
+
+      & > span {
+        font-size: 22px;
+        padding-bottom: 40px;
+        display: inline-block;
+        font-family: 'Roboto Slab', serif;
+
+        h4 {
+          font-family: 'Shadows Into Light', cursive;
+          color: #212121;
+          margin: 0;
+          font-size: 50px;
+        }
+
+        & > span {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .thirdSection {
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: #f6f6f6;
+      position: relative;
+      font-size: 43px;
+      font-family: 'Roboto Slab', serif;
+
+      .left {
+        position: absolute;
+        right: calc(100% + 10px);
+        top: 25px;
+      }
+
+      .right {
+        position: absolute;
+        left: calc(100% + 10px);
+        top: 25px;
+      }
+
+      .days {
+        border: 11px solid #f2ac3e;
+        font-family: 'Alfa Slab One', cursive;
+        border-radius: 50%;
+        font-size: 70px;
+        letter-spacing: 5px;
+        padding: 26px;
+      }
+    }
+  }
+
+  .fourthSection {
+    background-color: #212121;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #f6f6f6;
+
+    h1 {
+      margin: -1px 0 0;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      padding: 20px 0;
+      color: $orange;
+      font-size: 54px;
+    }
+
+    input {
+      background-color: transparent;
+      color: #f6f6f6;
+      border: 6px solid #f6f6f6;
+      width: calc(100% - 52px);
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 30px;
+
+      &::-moz-placeholder {
+        color: #b7b7b7;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #b7b7b7;
+      }
+
+      &:focus {
+        border-color: $blue;
+        outline: 0;
+      }
+    }
+
+    label {
+      position: absolute;
+      font-size: 30px;
+      padding-right: 22px;
+      right: 100%;
+      top: 25px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .email,
+    .phone {
+      position: relative;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .phone {
+      margin-bottom: 50px;
+    }
+  }
+
+  .footer {
+    background-color: #090909;
+    padding: 10px 0 40px;
+
+    h1 {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 50px;
+      color: $orange;
+    }
+
+    .socials {
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 500px;
+      color: #f6f6f6;
+
+      .phone {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+}
