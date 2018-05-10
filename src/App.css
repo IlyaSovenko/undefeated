@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+.App {
+  text-align: center; }
+  .App button {
+    background: linear-gradient(to bottom right, #0096b2, #f2ac3e, #e96154);
+    border: 0;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1;
+    transition: all 1s ease;
+    border-radius: 8px; }
+    .App button:hover {
+      opacity: 0.7; }
+  .App .firstSection {
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+    .App .firstSection .topSlogan {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      top: 5px;
+      font-size: 25px; }
+      .App .firstSection .topSlogan hr {
+        flex: 1;
+        height: 100%;
+        border: 5px solid #f2ac3e; }
+      .App .firstSection .topSlogan .slogan {
+        font-weight: bold;
+        margin: 0 10px;
+        font-family: 'Amatic SC', cursive; }
+    .App .firstSection .socials {
+      margin-bottom: 30px;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 250px; }
+    .App .firstSection img {
+      width: 250px;
+      border: 15px solid #f2ac3e; }
+  .App .secondSection {
+    margin-top: -21.5px;
+    background-color: #f6f6f6;
+    padding: 20px 0 10px; }
+    .App .secondSection h1 {
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 30px;
+      margin-bottom: 0;
+      margin-top: 35px; }
+    .App .secondSection .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #212121;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px; }
+      .App .secondSection .title h2 {
+        padding-top: 7px;
+        padding-right: 5px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        letter-spacing: 2px;
+        color: #f2ac3e; }
+    .App .secondSection .info {
+      margin: auto;
+      max-width: 1105px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .App .secondSection .info .card {
+        width: 300px;
+        margin: 30px;
+        height: 350px;
+        background-color: white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+    .App .secondSection .invite {
+      margin: 20px 0;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      background-color: #141414;
+      font-family: 'Rubik Mono One', sans-serif; }
+      .App .secondSection .invite h3 {
+        font-size: 20px;
+        color: #0096b2; }
+      .App .secondSection .invite span {
+        display: block;
+        margin-bottom: 50px;
+        font-size: 15px;
+        color: white; }
+    .App .secondSection .whenAndWhere {
+      padding-bottom: 490px; }
+      .App .secondSection .whenAndWhere h3 {
+        font-weight: 500;
+        font-size: 35px;
+        padding: 5px;
+        width: 300px;
+        border: 5px solid #f2ac3e;
+        margin: 70px auto 30px; }
+      .App .secondSection .whenAndWhere > div {
+        height: 500px !important; }
+      .App .secondSection .whenAndWhere > span {
+        font-size: 22px;
+        padding-bottom: 40px;
+        display: inline-block;
+        font-family: 'Roboto Slab', serif; }
+        .App .secondSection .whenAndWhere > span h4 {
+          font-family: 'Shadows Into Light', cursive;
+          color: #212121;
+          margin: 0;
+          font-size: 50px; }
+        .App .secondSection .whenAndWhere > span > span {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #e96154; }
+  .App .thirdSection {
+    background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .App .thirdSection h1 {
+      color: #f6f6f6;
+      position: relative;
+      font-size: 43px;
+      font-family: 'Roboto Slab', serif; }
+      .App .thirdSection h1 .left {
+        position: absolute;
+        right: calc(100% + 10px);
+        top: 25px; }
+      .App .thirdSection h1 .right {
+        position: absolute;
+        left: calc(100% + 10px);
+        top: 25px; }
+      .App .thirdSection h1 .days {
+        border: 11px solid #f2ac3e;
+        font-family: 'Alfa Slab One', cursive;
+        border-radius: 50%;
+        font-size: 70px;
+        letter-spacing: 5px;
+        padding: 26px; }
+  .App .fourthSection {
+    background-color: #212121;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #f6f6f6; }
+    .App .fourthSection h1 {
+      margin: -1px 0 0;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      padding: 20px 0;
+      color: #f2ac3e;
+      font-size: 54px; }
+    .App .fourthSection input {
+      background-color: transparent;
+      color: #f6f6f6;
+      border: 6px solid #f6f6f6;
+      width: calc(100% - 52px);
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 30px; }
+      .App .fourthSection input::-moz-placeholder {
+        color: #b7b7b7; }
+      .App .fourthSection input::-webkit-input-placeholder {
+        color: #b7b7b7; }
+      .App .fourthSection input:focus {
+        border-color: #0096b2;
+        outline: 0; }
+    .App .fourthSection label {
+      position: absolute;
+      font-size: 30px;
+      padding-right: 22px;
+      right: 100%;
+      top: 25px;
+      font-family: 'Montserrat', sans-serif; }
+    .App .fourthSection .email,
+    .App .fourthSection .phone {
+      position: relative;
+      width: 50%;
+      margin: 20px auto; }
+    .App .fourthSection .phone {
+      margin-bottom: 50px; }
+  .App .footer {
+    background-color: #090909;
+    padding: 10px 0 40px; }
+    .App .footer h1 {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 50px;
+      color: #f2ac3e; }
+    .App .footer .socials {
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 500px;
+      color: #f6f6f6; }
+      .App .footer .socials .phone {
+        font-family: 'Montserrat', sans-serif; }

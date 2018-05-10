@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './assets/logo-white.svg';
-import * as styles from './App.scss';
+import * as styles from './App.css';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class App extends Component {
