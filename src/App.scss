@@ -13,6 +13,25 @@ $red: #e96154;
 .App {
   text-align: center;
 
+  button {
+    background: linear-gradient(to bottom right, $blue, $orange, $red);
+    border: 0;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    opacity: 1;
+    transition: all 1s ease;
+    border-radius: 8px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
   & .firstSection {
     background: #fff url(./assets/bg.jpg) no-repeat fixed center center;
     background-size: cover;
@@ -112,6 +131,7 @@ $red: #e96154;
     .invite {
       margin: 20px 0;
       padding-top: 20px;
+      padding-bottom: 50px;
       background-color: #141414;
       font-family: 'Rubik Mono One', sans-serif;
 
@@ -120,27 +140,9 @@ $red: #e96154;
         color: $blue;
       }
 
-      button {
-        margin: 50px;
-        background: linear-gradient(to bottom right, $blue, $orange, $red);
-        border: 0;
-        cursor: pointer;
-        padding: 20px;
-        font-size: 20px;
-        font-family: 'Roboto Slab', serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: white;
-        opacity: 1;
-        transition: all 1s ease;
-        border-radius: 8px;
-
-        &:hover {
-          opacity: 0.7;
-        }
-      }
-
       span {
+        display: block;
+        margin-bottom: 50px;
         font-size: 15px;
         color: white;
       }
@@ -194,8 +196,21 @@ $red: #e96154;
 
     h1 {
       color: #f6f6f6;
-      margin: 0;
-      font-size: 45px;
+      position: relative;
+      font-size: 43px;
+      font-family: 'Roboto Slab', serif;
+
+      .left {
+        position: absolute;
+        right: calc(100% + 10px);
+        top: 25px;
+      }
+
+      .right {
+        position: absolute;
+        left: calc(100% + 10px);
+        top: 25px;
+      }
 
       .days {
         border: 11px solid #f2ac3e;
@@ -204,6 +219,90 @@ $red: #e96154;
         font-size: 70px;
         letter-spacing: 5px;
         padding: 26px;
+      }
+    }
+  }
+
+  .fourthSection {
+    background-color: #212121;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #f6f6f6;
+
+    h1 {
+      margin: -1px 0 0;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      padding: 20px 0;
+      color: $orange;
+      font-size: 54px;
+    }
+
+    input {
+      background-color: transparent;
+      color: #f6f6f6;
+      border: 6px solid #f6f6f6;
+      width: calc(100% - 52px);
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 30px;
+
+      &::-moz-placeholder {
+        color: #b7b7b7;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #b7b7b7;
+      }
+
+      &:focus {
+        border-color: $blue;
+        outline: 0;
+      }
+    }
+
+    label {
+      position: absolute;
+      font-size: 30px;
+      padding-right: 22px;
+      right: 100%;
+      top: 25px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .email,
+    .phone {
+      position: relative;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .phone {
+      margin-bottom: 50px;
+    }
+  }
+
+  .footer {
+    background-color: #090909;
+    padding: 10px 0 40px;
+
+    h1 {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-size: 50px;
+      color: $orange;
+    }
+
+    .socials {
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      font-size: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 500px;
+      color: #f6f6f6;
+
+      .phone {
+        font-family: 'Montserrat', sans-serif;
       }
     }
   }
