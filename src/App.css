@@ -95,6 +95,9 @@
         height: 350px;
         background-color: white;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+      @media (max-width: 880px) {
+        .App .secondSection .info {
+          flex-direction: column; } }
     .App .secondSection .invite {
       margin: 20px 0;
       padding-top: 20px;
@@ -161,6 +164,16 @@
         font-size: 70px;
         letter-spacing: 5px;
         padding: 26px; }
+    @media (max-width: 715px) {
+      .App .thirdSection {
+        height: 350px; }
+        .App .thirdSection h1 .right {
+          top: calc(100% + 40px);
+          left: 45px; }
+        .App .thirdSection h1 .left {
+          top: auto;
+          left: -10px;
+          bottom: calc(100% + 46px); } }
   .App .fourthSection {
     background-color: #212121;
     padding-top: 20px;
@@ -201,6 +214,16 @@
       margin: 20px auto; }
     .App .fourthSection .phone {
       margin-bottom: 50px; }
+    @media (max-width: 775px) {
+      .App .fourthSection .email,
+      .App .fourthSection .phone {
+        width: 93%;
+        margin: 30px auto 50px; }
+      .App .fourthSection label {
+        font-size: 27px;
+        right: auto;
+        top: auto;
+        bottom: calc(100% + 5px); } }
   .App .footer {
     background-color: #090909;
     padding: 10px 0 40px; }
@@ -219,3 +242,12 @@
       color: #f6f6f6; }
       .App .footer .socials .phone {
         font-family: 'Montserrat', sans-serif; }
+      @media (max-width: 600px) {
+        .App .footer .socials {
+          width: 80%;
+          padding-bottom: 40px;
+          margin-bottom: 20px; }
+          .App .footer .socials > span {
+            position: absolute;
+            top: 85%;
+            width: 100%; } }
