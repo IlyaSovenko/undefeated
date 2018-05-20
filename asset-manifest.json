@@ -1,8 +1,11 @@
 {
-  "main.css": "static/css/main.8ec9179e.css",
-  "main.css.map": "static/css/main.8ec9179e.css.map",
-  "main.js": "static/js/main.7c58f9e2.js",
-  "main.js.map": "static/js/main.7c58f9e2.js.map",
+  "main.css": "static/css/main.38362bf1.css",
+  "main.css.map": "static/css/main.38362bf1.css.map",
+  "main.js": "static/js/main.74277896.js",
+  "main.js.map": "static/js/main.74277896.js.map",
   "static/media/bg.jpg": "static/media/bg.65017da7.jpg",
-  "static/media/logo-white.svg": "static/media/logo-white.6d487bbe.svg"
+  "static/media/festival.jpg": "static/media/festival.478e4728.jpg",
+  "static/media/friends.jpg": "static/media/friends.0b5a4b21.jpg",
+  "static/media/logo-white.svg": "static/media/logo-white.6d487bbe.svg",
+  "static/media/nature.jpg": "static/media/nature.02e748ce.jpg"
 }
