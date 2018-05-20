@@ -207,6 +207,7 @@
       right: 100%;
       top: 25px;
       font-family: 'Montserrat', sans-serif; }
+    .App .fourthSection .name,
     .App .fourthSection .email,
     .App .fourthSection .phone {
       position: relative;
