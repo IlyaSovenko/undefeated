@@ -216,6 +216,7 @@
     .App .fourthSection .phone {
       margin-bottom: 50px; }
     @media (max-width: 775px) {
+      .App .fourthSection .name,
       .App .fourthSection .email,
       .App .fourthSection .phone {
         width: 93%;

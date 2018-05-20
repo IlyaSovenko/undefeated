@@ -61,7 +61,7 @@ class App extends Component {
           <h1>Регистрация</h1>
           <iframe title="redirect" name="hidden_iframe" id="hidden_iframe"
                   style={{display: 'none'}} onLoad={() => {if(submitted)
-{window.location='http://localhost:3000';}}} />
+{window.location='#';}}} />
             <form
               action="https://docs.google.com/forms/d/e/1FAIpQLSerK874Q0pLqdvftWntD6Rw5ubvnF4wnenYe09gwR4PqdhKyw/formResponse"
               target="hidden_iframe" onSubmit={() => submitted=true} method="POST" id="mG61Hd">

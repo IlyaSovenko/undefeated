@@ -303,6 +303,7 @@ $red: #e96154;
     }
 
     @media (max-width: 775px) {
+      .name,
       .email,
       .phone {
         width: 93%;
