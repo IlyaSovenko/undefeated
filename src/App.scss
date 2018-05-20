@@ -13,6 +13,11 @@ $red: #e96154;
 .App {
   text-align: center;
 
+  a {
+    text-transform: none;
+    color: inherit;
+  }
+
   button {
     background: linear-gradient(to bottom right, $blue, $orange, $red);
     border: 0;
@@ -125,6 +130,48 @@ $red: #e96154;
         height: 350px;
         background-color: white;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+        &:nth-child(1) {
+          border-top: 7px solid $blue;
+
+          .highlight {
+            color: $blue;
+          }
+        }
+
+        &:nth-child(2) {
+          border-top: 7px solid $orange;
+
+          .highlight {
+            color: $orange;
+          }
+        }
+
+        &:nth-child(3) {
+          border-top: 7px solid $red;
+
+          .highlight {
+            color: $red;
+          }
+        }
+
+        img {
+          width: 300px;
+          height: 168px;
+        }
+
+        & > span {
+          font-family: 'Montserrat', sans-serif;
+          display: block;
+          padding: 20px;
+          font-size: 17px;
+
+          .highlight {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 5px;
+          }
+        }
       }
 
       @media (max-width: 880px) {

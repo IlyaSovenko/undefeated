@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
 import logo from './assets/logo-white.svg';
+import festival from './assets/festival.jpg';
+import nature from './assets/nature.jpg';
+import friends from './assets/friends.jpg';
 import * as styles from './App.css';
-import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class App extends Component {
+  scrollOnSignUp = () => {
+    window.scrollTo( 0, this.signUp.offsetTop );
+  }
+
   render() {
     let submitted = false;
 
@@ -16,9 +23,9 @@ class App extends Component {
             <hr/>
           </div>
           <div className={styles.socials}>
-            <i className="fab fa-instagram"/>
-            <i className="fab fa-facebook-f"/>
-            <i className="fa fa-envelope"/>
+            <a href={'https://www.instagram.com/undefeated_sumy/'}><i className="fab fa-instagram"/></a>
+            <a href={'https://www.facebook.com/undefeated.sumy'}><i className="fab fa-facebook-f"/></a>
+            <a href={'mailto:undefeated.sumy@gmail.com'}><i className="fa fa-envelope"/></a>
           </div>
           <img src={logo} alt="logo"/>
         </div>
@@ -26,16 +33,33 @@ class App extends Component {
           <span className={styles.title}><h2>Undefeated</h2> - это</span>
           <div className={styles.info}>
             <div className={styles.card}>
+              <img src={festival} alt="festival" />
+              <span>
+                Молодёжный
+                <span className={styles.highlight}>фестиваль</span>
+                с крутыми спикерами, классным прославлением, интерестными мастер-классами и многим другим
+              </span>
             </div>
             <div className={styles.card}>
+              <img src={nature} alt="nature" />
+              <span>
+                Отличное
+                <span className={styles.highlight}>место</span>
+                для отдыха на природе, в сосновом лесу, ночуя в просторной палатке, в тёплом спальнике, на берегу реки
+              </span>
             </div>
             <div className={styles.card}>
+              <img src={friends} alt="friends" />
+              <span>
+                <span className={styles.highlight}>Время</span>
+                для встречи новых друзей, или укрепления отношений со "старыми", время для создания крепких отношения на долгие годы
+              </span>
             </div>
           </div>
           <div className={styles.invite}>
             <h3>Хочешь поехать?</h3>
             <span>Поторопись, места ограничены!</span>
-            <button>Зарегестрироваться</button>
+            <button onClick={this.scrollOnSignUp}>Зарегестрироваться</button>
           </div>
           <div className={styles.whenAndWhere}>
             <h3>26 - 29 июля</h3>
@@ -57,7 +81,7 @@ class App extends Component {
             <span className={styles.right}>дня</span>
           </h1>
         </div>
-        <div className={styles.fourthSection}>
+        <div ref={signUp => { this.signUp = signUp }} className={styles.fourthSection}>
           <h1>Регистрация</h1>
           <iframe title="redirect" name="hidden_iframe" id="hidden_iframe"
                   style={{display: 'none'}} onLoad={() => {if(submitted)
@@ -75,7 +99,6 @@ class App extends Component {
                        placeholder="Иван"
                        data-initial-dir="auto"
                        data-initial-value=""/>
-                {/*<input placeholder="Иван" id="name" type="text" />*/}
               </div>
               <div className={styles.email}>
                 <label htmlFor="email">Email</label>
@@ -86,7 +109,6 @@ class App extends Component {
                   dir="auto"
                   data-initial-dir="auto"
                   data-initial-value="" placeholder="example@example.com" id="email" type="email"/>
-                {/*<input placeholder="example@example.com" id="email" type="email" />*/}
               </div>
               <div className={styles.phone}>
                 <label htmlFor="phone">Телефон</label>
@@ -96,7 +118,6 @@ class App extends Component {
                        dir="auto"
                        data-initial-dir="auto"
                        data-initial-value="" placeholder="0501112233" id="phone" type="text"/>
-                {/*<input placeholder="0501112233" id="phone" type="text" />*/}
               </div>
               <input type="hidden" name="fvv" value="1"/><input type="hidden" name="draftResponse"
                                                                 value="[null,null,&quot;5058077176259123571&quot;]"/><input
@@ -108,9 +129,9 @@ class App extends Component {
         <div className={styles.footer}>
           <h1>Контакты</h1>
           <div className={styles.socials}>
-            <i className="fab fa-instagram"/>
-            <i className="fab fa-facebook-f"/>
-            <i className="fa fa-envelope"/>
+            <a href={'https://www.instagram.com/undefeated_sumy/'}><i className="fab fa-instagram"/></a>
+            <a href={'https://www.facebook.com/undefeated.sumy'}><i className="fab fa-facebook-f"/></a>
+            <a href={'mailto:undefeated.sumy@gmail.com'}><i className="fa fa-envelope"/></a>
             <span>
               <i className="fas fa-phone"/>
               <span className={styles.phone}> +380501112233</span>

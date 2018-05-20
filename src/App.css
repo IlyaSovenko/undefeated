@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
 .App {
   text-align: center; }
+  .App a {
+    text-transform: none;
+    color: inherit; }
   .App button {
     background: linear-gradient(to bottom right, #0096b2, #f2ac3e, #e96154);
     border: 0;
@@ -95,6 +98,30 @@
         height: 350px;
         background-color: white;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+        .App .secondSection .info .card:nth-child(1) {
+          border-top: 7px solid #0096b2; }
+          .App .secondSection .info .card:nth-child(1) .highlight {
+            color: #0096b2; }
+        .App .secondSection .info .card:nth-child(2) {
+          border-top: 7px solid #f2ac3e; }
+          .App .secondSection .info .card:nth-child(2) .highlight {
+            color: #f2ac3e; }
+        .App .secondSection .info .card:nth-child(3) {
+          border-top: 7px solid #e96154; }
+          .App .secondSection .info .card:nth-child(3) .highlight {
+            color: #e96154; }
+        .App .secondSection .info .card img {
+          width: 300px;
+          height: 168px; }
+        .App .secondSection .info .card > span {
+          font-family: 'Montserrat', sans-serif;
+          display: block;
+          padding: 20px;
+          font-size: 17px; }
+          .App .secondSection .info .card > span .highlight {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 5px; }
       @media (max-width: 880px) {
         .App .secondSection .info {
           flex-direction: column; } }
