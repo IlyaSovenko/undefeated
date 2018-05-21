@@ -270,8 +270,16 @@
       justify-content: space-between;
       width: 500px;
       color: #f6f6f6; }
-      .App .footer .socials .phone {
-        font-family: 'Montserrat', sans-serif; }
+      .App .footer .socials > span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .App .footer .socials > span .phone {
+          font-family: 'Montserrat', sans-serif;
+          display: flex;
+          margin-top: -20px;
+          margin-left: 12px;
+          flex-direction: column; }
       @media (max-width: 600px) {
         .App .footer .socials {
           width: 80%;

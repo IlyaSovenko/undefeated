@@ -387,8 +387,18 @@ $red: #e96154;
       width: 500px;
       color: #f6f6f6;
 
-      .phone {
-        font-family: 'Montserrat', sans-serif;
+      & > span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .phone {
+          font-family: 'Montserrat', sans-serif;
+          display: flex;
+          margin-top: -20px;
+          margin-left: 12px;
+          flex-direction: column;
+        }
       }
 
       @media (max-width: 600px) {

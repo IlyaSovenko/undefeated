@@ -134,7 +134,7 @@ class App extends Component {
             <a href={'mailto:undefeated.sumy@gmail.com'}><i className="fa fa-envelope"/></a>
             <span>
               <i className="fas fa-phone"/>
-              <span className={styles.phone}> +380501112233</span>
+              <span className={styles.phone}><span>+380937458560</span><span>+380664955856</span></span>
             </span>
           </div>
         </div>
