@@ -7,9 +7,7 @@ import * as styles from './App.css';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class App extends Component {
-  scrollOnSignUp = () => {
-    window.scrollTo( 0, this.signUp.offsetTop );
-  }
+  scrollOnSignUp = () => { window.scrollTo( 0, this.signUp.offsetTop ); };
 
   render() {
     let submitted = false;
@@ -77,7 +75,7 @@ class App extends Component {
         <div className={styles.thirdSection}>
           <h1>
             <span className={styles.left}>Осталось</span>
-            <span className={styles.days}>22</span>
+            <span className={styles.days}>{Math.floor((new Date(2018, 6, 26) - new Date())/1000/60/60/24)}</span>
             <span className={styles.right}>дня</span>
           </h1>
         </div>
