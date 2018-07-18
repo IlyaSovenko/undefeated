@@ -6,11 +6,27 @@ import friends from './assets/friends.jpg';
 import * as styles from './App.css';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
+const lastDigitToWord = (digit) => {
+  const lastFigure = parseInt(digit.toString().substr(digit.toString().length - 1, 1));
+  if (digit >= 11 && digit < 15)
+  {
+    return 'дней';
+  }
+  else
+  {
+    if (lastFigure === 1) return 'день';
+    if (lastFigure > 1 && lastFigure < 5) return 'дня';
+    if (lastFigure === 0 || lastFigure >= 5) return 'дней';
+  }
+}
+
 class App extends Component {
   scrollOnSignUp = () => { window.scrollTo( 0, this.signUp.offsetTop ); };
 
   render() {
     let submitted = false;
+    const daysLeft = (new Date(2018, 6, 26) - new Date()) > 0 ?
+      Math.floor((new Date(2018, 6, 26) - new Date())/1000/60/60/24) : 0;
 
     return (
       <div className={styles.App}>
@@ -66,7 +82,7 @@ class App extends Component {
               google={this.props.google}
               zoom={13}
               style={{width: '100%', height: 500}}
-              initialCenter={{lat: 50.965209, lng: 34.899343}}
+              initialCenter={{lat: 50.961765, lng: 34.905824}}
             >
               <Marker title={'Здесь место фестиваля'} name={'UNDEFEATED'}/>
             </Map>
@@ -75,8 +91,14 @@ class App extends Component {
         <div className={styles.thirdSection}>
           <h1>
             <span className={styles.left}>Осталось</span>
-            <span className={styles.days}>{Math.floor((new Date(2018, 6, 26) - new Date())/1000/60/60/24)}</span>
-            <span className={styles.right}>дня</span>
+            <span
+              className={styles.days}
+              style={{
+                paddingLeft: daysLeft >= 10 ? 26 : 52,
+                paddingRight: daysLeft >= 10 ? 26 : 52,
+              }}
+            >{daysLeft}</span>
+            <span className={styles.right}>{lastDigitToWord(daysLeft)}</span>
           </h1>
         </div>
         <div ref={signUp => { this.signUp = signUp }} className={styles.fourthSection}>

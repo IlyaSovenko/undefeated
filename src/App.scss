@@ -280,7 +280,8 @@ $red: #e96154;
       h1 {
         .right {
           top: calc(100% + 40px);
-          left: 45px;
+          left: 0;
+          width: 100%;
         }
 
         .left {
